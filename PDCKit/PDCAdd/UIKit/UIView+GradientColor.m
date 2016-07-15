@@ -31,12 +31,27 @@
     return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
+-(void )setGradientLayer:(CAGradientLayer *)gradientLayer
+{
+    objc_setAssociatedObject(self, @selector(gradientLayer), gradientLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(CAGradientLayer *)gradientLayer
+{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 -(void )setGradientColor:(UIColor *)gradientColor
 {
     objc_setAssociatedObject(self, @selector(gradientColor), gradientColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.frame = self.bounds;
+        if (nil == self.gradientLayer)
+        {
+            CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+            self.gradientLayer = gradientLayer;
+        }
+        
+        self.gradientLayer.frame = self.bounds;
         CGPoint start;
         CGPoint end;
         NSMutableArray *colors = [NSMutableArray array];
@@ -45,86 +60,90 @@
             case TopToDown:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(0, 1);
-                [colors addObject:(id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
                 [colors addObject:(id)self.defaultColor.CGColor];
                 break;
             case DownToTop:
                 start = CGPointMake(0, 1);
                 end = CGPointMake(0, 0);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case LeftToRight:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(1, 0);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case RightToLeft:
                 start = CGPointMake(1, 0);
                 end = CGPointMake(0, 0);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case TopLeftToDownRight:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(1, 1);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case TopRightToDownLeft:
                 start = CGPointMake(1, 0);
                 end = CGPointMake(0, 1);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case DownRightToTopLeft:
                 start = CGPointMake(0, 1);
                 end = CGPointMake(1, 0);
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
                 break;
             case DownLeftToTopRight:
                 start = CGPointMake(1, 0);
                 end = CGPointMake(0, 1);
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
                 break;
             case CenterToLeftRight:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(1, 0);
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case CenterToTopDown:
                 start = CGPointMake(0, 1);
                 end = CGPointMake(0, 0);
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
             case LeftRightToCenter:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(1, 0);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
                 break;
             case TopDownToCenter:
                 start = CGPointMake(0, 0);
                 end = CGPointMake(0, 1);
-                [colors addObject:(id)gradientColor.CGColor];
-                [colors addObject:(id)self.defaultColor.CGColor];
-                [colors addObject:(id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
+                [colors addObject:(__bridge id)gradientColor.CGColor];
                 break;
             default:
+                start = CGPointMake(0, 0);
+                end = CGPointMake(0, 1);
+                [colors addObject:(__bridge id)gradientColor.CGColor];
+                [colors addObject:(__bridge id)self.defaultColor.CGColor];
                 break;
         }
-        gradientLayer.colors = [colors copy];
-        gradientLayer.startPoint = start;
-        gradientLayer.endPoint = end;
-        [self.layer addSublayer:gradientLayer];
+        self.gradientLayer.colors = [colors copy];
+        self.gradientLayer.startPoint = start;
+        self.gradientLayer.endPoint = end;
+        [self.layer addSublayer:self.gradientLayer];
     });
 }
 
@@ -137,8 +156,14 @@
 {
     objc_setAssociatedObject(self, @selector(customGradientColors), customGradientColors, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.frame = self.bounds;
+        if (nil == self.gradientLayer)
+        {
+            CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+            self.gradientLayer = gradientLayer;
+        }
+        
+        self.gradientLayer.frame = self.bounds;
+        
         CGPoint start;
         CGPoint end;
         NSMutableArray *colors = [NSMutableArray array];
@@ -184,15 +209,28 @@
                 end = CGPointMake(0, 1);
                 break;
         }
-        gradientLayer.colors = [colors copy];
-        gradientLayer.startPoint = start;
-        gradientLayer.endPoint = end;
-        [self.layer addSublayer:gradientLayer];
+        self.gradientLayer.colors = [colors copy];
+        self.gradientLayer.startPoint = start;
+        self.gradientLayer.endPoint = end;
+        [self.layer addSublayer:self.gradientLayer];
     });
 }
 
 -(NSArray<UIColor *> *)customGradientColors
 {
     return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void )layoutGradientLayer
+{
+    if (self.gradientColor)
+    {
+        self.gradientColor = self.gradientColor;
+    }
+    
+    if (self.customGradientColors)
+    {
+        self.customGradientColors = self.customGradientColors;
+    }
 }
 @end

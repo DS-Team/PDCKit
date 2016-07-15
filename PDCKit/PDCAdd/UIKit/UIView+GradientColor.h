@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define DefaultTypeCustomColors 222
+#define DefaultTypeIfCustomColors 250
 
 typedef NS_ENUM(NSInteger,GradientColorEnumType)
 {
@@ -21,16 +21,12 @@ typedef NS_ENUM(NSInteger,GradientColorEnumType)
     DownRightToTopLeft,
     DownLeftToTopRight,
     
-    CenterToLeftRight = DefaultTypeCustomColors,
+    CenterToLeftRight = DefaultTypeIfCustomColors,
     CenterToTopDown,
     LeftRightToCenter,
     TopDownToCenter
 };
 
-
-/**
- *  渐变色设置
- */
 @interface UIView (GradientColor)
 //默认渐变到的颜色，默认为白色
 @property (strong, nonatomic) UIColor *defaultColor;
@@ -44,4 +40,10 @@ typedef NS_ENUM(NSInteger,GradientColorEnumType)
 //自定义颜色数组
 @property (strong, nonatomic) NSArray<UIColor *> *customGradientColors;
 
+
+//gradientLayer
+@property (nonatomic, strong) CAGradientLayer *gradientLayer;
+
+//适配横竖屏
+-(void )layoutGradientLayer;
 @end
