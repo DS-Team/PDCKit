@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 @implementation UIView (GradientColor)
+
 -(void )setDefaultColor:(UIColor *)defaultColor
 {
     objc_setAssociatedObject(self, @selector(defaultColor), defaultColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -145,6 +146,9 @@
         self.gradientLayer.endPoint = end;
         [self.layer addSublayer:self.gradientLayer];
     });
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeOrientation:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 -(UIColor *)gradientColor
@@ -214,11 +218,18 @@
         self.gradientLayer.endPoint = end;
         [self.layer addSublayer:self.gradientLayer];
     });
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeOrientation:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 -(NSArray<UIColor *> *)customGradientColors
 {
     return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void )changeOrientation:(NSNotification *)sender
+{
+    [self layoutGradientLayer];
 }
 
 -(void )layoutGradientLayer

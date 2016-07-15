@@ -44,6 +44,4 @@ typedef NS_ENUM(NSInteger,GradientColorEnumType)
 //gradientLayer
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;
 
-//适配横竖屏
--(void )layoutGradientLayer;
 @end
