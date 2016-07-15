@@ -1,2 +1,3 @@
 # PDCKit
-UIKit NSKit PDCKit
+make development easier
+
