@@ -34,6 +34,8 @@
 		EABD34FA1D349B8800C96D4F /* UIView+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD34DE1D349B8800C96D4F /* UIView+GradientColor.m */; };
 		EABD34FC1D349B8800C96D4F /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD34E31D349B8800C96D4F /* UIViewController+Alert.m */; };
 		EAC2D5271D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2D5261D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m */; };
+		EAD4C5311D3CA6F100F3D5B2 /* UINavigationController+PDC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD4C5301D3CA6F100F3D5B2 /* UINavigationController+PDC.m */; };
+		EAD4C5341D3CA71100F3D5B2 /* UIApplication+PDCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD4C5331D3CA71100F3D5B2 /* UIApplication+PDCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,10 @@
 		EABD34E31D349B8800C96D4F /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Alert.m"; path = "PDCKit/PDCAdd/UIKit/UIViewController+Alert.m"; sourceTree = SOURCE_ROOT; };
 		EAC2D5251D38B6900095B141 /* UIViewController+NavBarLeftRightItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBarLeftRightItem.h"; sourceTree = "<group>"; };
 		EAC2D5261D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBarLeftRightItem.m"; sourceTree = "<group>"; };
+		EAD4C52F1D3CA6F100F3D5B2 /* UINavigationController+PDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PDC.h"; sourceTree = "<group>"; };
+		EAD4C5301D3CA6F100F3D5B2 /* UINavigationController+PDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PDC.m"; sourceTree = "<group>"; };
+		EAD4C5321D3CA71100F3D5B2 /* UIApplication+PDCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PDCKit.h"; sourceTree = "<group>"; };
+		EAD4C5331D3CA71100F3D5B2 /* UIApplication+PDCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PDCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +271,10 @@
 		EABD34D81D349B8800C96D4F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EAD4C5321D3CA71100F3D5B2 /* UIApplication+PDCKit.h */,
+				EAD4C5331D3CA71100F3D5B2 /* UIApplication+PDCKit.m */,
+				EAD4C52F1D3CA6F100F3D5B2 /* UINavigationController+PDC.h */,
+				EAD4C5301D3CA6F100F3D5B2 /* UINavigationController+PDC.m */,
 				EAC2D5251D38B6900095B141 /* UIViewController+NavBarLeftRightItem.h */,
 				EAC2D5261D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m */,
 				EABD34E21D349B8800C96D4F /* UIViewController+Alert.h */,
@@ -496,6 +506,7 @@
 				EABD34EB1D349B8800C96D4F /* StringDemoController.m in Sources */,
 				EABD34ED1D349B8800C96D4F /* DemoListTableViewController.m in Sources */,
 				EABD34E81D349B8800C96D4F /* ButtonDemoController.m in Sources */,
+				EAD4C5311D3CA6F100F3D5B2 /* UINavigationController+PDC.m in Sources */,
 				EABD34EA1D349B8800C96D4F /* NSTimerDemoController.m in Sources */,
 				EABD34F21D349B8800C96D4F /* PDCSerialQueue.m in Sources */,
 				EABD34F91D349B8800C96D4F /* UIControl+PDCAdd.m in Sources */,
@@ -507,6 +518,7 @@
 				EAC2D5271D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m in Sources */,
 				EABD34F71D349B8800C96D4F /* NSTimer+PDCAdd.m in Sources */,
 				EABD34F41D349B8800C96D4F /* NSArray+PDCAdd.m in Sources */,
+				EAD4C5341D3CA71100F3D5B2 /* UIApplication+PDCKit.m in Sources */,
 				EABD34FA1D349B8800C96D4F /* UIView+GradientColor.m in Sources */,
 				EABD34F51D349B8800C96D4F /* NSAttributedString+PDCAdd.m in Sources */,
 				EABD34E41D349B8800C96D4F /* AppDelegate.m in Sources */,
