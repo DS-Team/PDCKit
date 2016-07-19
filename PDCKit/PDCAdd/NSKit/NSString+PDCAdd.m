@@ -91,6 +91,7 @@
             CC_SHA512(str, (CC_LONG)self.length, md);
             break;
         default:
+            CC_SHA1(str, (CC_LONG)self.length, md);
             break;
     }
     for(int i = 0; i < type; i++)

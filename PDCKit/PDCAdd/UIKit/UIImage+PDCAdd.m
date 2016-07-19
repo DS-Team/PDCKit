@@ -97,6 +97,7 @@
                 {
                     duration1 += [timeDict[(NSString *)kCGImagePropertyGIFUnclampedDelayTime] floatValue];
                 }
+                CFRelease(cfDict);
             }
             [images addObject:[UIImage imageWithCGImage:image scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
             
