@@ -111,7 +111,7 @@
     {
         NSString *title = param;
         [btn setTitle:title forState:UIControlStateNormal];
-        CGRect rect = [btn.titleLabel textRectForBounds:CGRectMake(0, 0, 999, 30) limitedToNumberOfLines:1];
+        CGRect rect = [btn.titleLabel textRectForBounds:CGRectMake(0, 0, MAXFLOAT, 30) limitedToNumberOfLines:1];
         btn.frame = rect;
     }
     else if([param isKindOfClass:[UIImage class]])

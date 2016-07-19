@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EA2051391D003E9200A81DD6 /* PDCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051381D003E9200A81DD6 /* PDCKitTests.m */; };
 		EA2051441D003E9200A81DD6 /* PDCKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051431D003E9200A81DD6 /* PDCKitUITests.m */; };
+		EAB9D2821D3DF5EB005CD431 /* UIColor+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9D27F1D3DF5EB005CD431 /* UIColor+PDCAdd.m */; };
+		EAB9D2831D3DF5EB005CD431 /* UIImage+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9D2811D3DF5EB005CD431 /* UIImage+PDCAdd.m */; };
+		EAB9D2CF1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9D2CE1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m */; };
 		EABD34E41D349B8800C96D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD34AF1D349B8800C96D4F /* AppDelegate.m */; };
 		EABD34E51D349B8800C96D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABD34B01D349B8800C96D4F /* Assets.xcassets */; };
 		EABD34E61D349B8800C96D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABD34B11D349B8800C96D4F /* LaunchScreen.storyboard */; };
@@ -63,6 +66,12 @@
 		EA20513F1D003E9200A81DD6 /* PDCKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDCKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2051431D003E9200A81DD6 /* PDCKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCKitUITests.m; sourceTree = "<group>"; };
 		EA2051451D003E9200A81DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB9D27E1D3DF5EB005CD431 /* UIColor+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PDCAdd.h"; sourceTree = "<group>"; };
+		EAB9D27F1D3DF5EB005CD431 /* UIColor+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PDCAdd.m"; sourceTree = "<group>"; };
+		EAB9D2801D3DF5EB005CD431 /* UIImage+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDCAdd.h"; sourceTree = "<group>"; };
+		EAB9D2811D3DF5EB005CD431 /* UIImage+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDCAdd.m"; sourceTree = "<group>"; };
+		EAB9D2CD1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+PDCAdd.h"; sourceTree = "<group>"; };
+		EAB9D2CE1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+PDCAdd.m"; sourceTree = "<group>"; };
 		EABD34AE1D349B8800C96D4F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EABD34AF1D349B8800C96D4F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EABD34B01D349B8800C96D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -273,16 +282,22 @@
 			children = (
 				EAD4C5321D3CA71100F3D5B2 /* UIApplication+PDCKit.h */,
 				EAD4C5331D3CA71100F3D5B2 /* UIApplication+PDCKit.m */,
+				EAB9D2CD1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.h */,
+				EAB9D2CE1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m */,
+				EABD34D91D349B8800C96D4F /* UIButton+PDCAdd.h */,
+				EABD34DA1D349B8800C96D4F /* UIButton+PDCAdd.m */,
+				EAB9D27E1D3DF5EB005CD431 /* UIColor+PDCAdd.h */,
+				EAB9D27F1D3DF5EB005CD431 /* UIColor+PDCAdd.m */,
+				EABD34DB1D349B8800C96D4F /* UIControl+PDCAdd.h */,
+				EABD34DC1D349B8800C96D4F /* UIControl+PDCAdd.m */,
+				EAB9D2801D3DF5EB005CD431 /* UIImage+PDCAdd.h */,
+				EAB9D2811D3DF5EB005CD431 /* UIImage+PDCAdd.m */,
 				EAD4C52F1D3CA6F100F3D5B2 /* UINavigationController+PDC.h */,
 				EAD4C5301D3CA6F100F3D5B2 /* UINavigationController+PDC.m */,
 				EAC2D5251D38B6900095B141 /* UIViewController+NavBarLeftRightItem.h */,
 				EAC2D5261D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m */,
 				EABD34E21D349B8800C96D4F /* UIViewController+Alert.h */,
 				EABD34E31D349B8800C96D4F /* UIViewController+Alert.m */,
-				EABD34DB1D349B8800C96D4F /* UIControl+PDCAdd.h */,
-				EABD34DC1D349B8800C96D4F /* UIControl+PDCAdd.m */,
-				EABD34D91D349B8800C96D4F /* UIButton+PDCAdd.h */,
-				EABD34DA1D349B8800C96D4F /* UIButton+PDCAdd.m */,
 				EABD34DD1D349B8800C96D4F /* UIView+GradientColor.h */,
 				EABD34DE1D349B8800C96D4F /* UIView+GradientColor.m */,
 			);
@@ -513,15 +528,18 @@
 				EABD34FC1D349B8800C96D4F /* UIViewController+Alert.m in Sources */,
 				EABD34E91D349B8800C96D4F /* NSAttributedStringController.m in Sources */,
 				EABD34F31D349B8800C96D4F /* PDCWaitGroup.m in Sources */,
+				EAB9D2CF1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m in Sources */,
 				EABD34EF1D349B8800C96D4F /* KeyControllerModel.m in Sources */,
 				EABD34F81D349B8800C96D4F /* UIButton+PDCAdd.m in Sources */,
 				EAC2D5271D38B6900095B141 /* UIViewController+NavBarLeftRightItem.m in Sources */,
+				EAB9D2831D3DF5EB005CD431 /* UIImage+PDCAdd.m in Sources */,
 				EABD34F71D349B8800C96D4F /* NSTimer+PDCAdd.m in Sources */,
 				EABD34F41D349B8800C96D4F /* NSArray+PDCAdd.m in Sources */,
 				EAD4C5341D3CA71100F3D5B2 /* UIApplication+PDCKit.m in Sources */,
 				EABD34FA1D349B8800C96D4F /* UIView+GradientColor.m in Sources */,
 				EABD34F51D349B8800C96D4F /* NSAttributedString+PDCAdd.m in Sources */,
 				EABD34E41D349B8800C96D4F /* AppDelegate.m in Sources */,
+				EAB9D2821D3DF5EB005CD431 /* UIColor+PDCAdd.m in Sources */,
 				EABD34F01D349B8800C96D4F /* main.m in Sources */,
 				EABD34EC1D349B8800C96D4F /* WaitGroupDemoController.m in Sources */,
 				EABD34F61D349B8800C96D4F /* NSString+PDCAdd.m in Sources */,
