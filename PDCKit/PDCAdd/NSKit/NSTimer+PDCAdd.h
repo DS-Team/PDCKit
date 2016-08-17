@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PDCQueueFunction.h"
 /** --------------------------------
  *
  *  这里的timer都是异步的timer
@@ -23,4 +24,7 @@
 +(void )gcd_scheduledTimerWithTimerInterval:(NSTimeInterval )interval repeat:(BOOL )repeat action:(void (^)(BOOL *stop)) action;
 
 +(void )gcd_scheduledTimerWithSource:(dispatch_source_t )source timerInterval:(NSTimeInterval )interval repeat:(BOOL )repeat action:(void (^)(BOOL *stop)) action end:(void (^)(dispatch_source_t source)) end;
+
+/* 这个也算是一个定时器，基于runloop */
+PDC_FUNTION_EXTERN void gcd_asynSerialQueue(NSTimeInterval block_next_time, pdc_block_bool block);
 @end

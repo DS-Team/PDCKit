@@ -688,7 +688,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/PDCKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.kidhub.PDCKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartboche.PDCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -701,7 +701,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/PDCKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.kidhub.PDCKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartboche.PDCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
