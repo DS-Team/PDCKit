@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		237E18E41D64363D004045ED /* UIView+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E31D64363D004045ED /* UIView+PDCAdd.m */; };
+		237E18E71D6438B3004045ED /* UITableView+AutoCacheCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E61D6438B3004045ED /* UITableView+AutoCacheCellHeight.m */; };
 		EA2051391D003E9200A81DD6 /* PDCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051381D003E9200A81DD6 /* PDCKitTests.m */; };
 		EA2051441D003E9200A81DD6 /* PDCKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051431D003E9200A81DD6 /* PDCKitUITests.m */; };
 		EAB9D2821D3DF5EB005CD431 /* UIColor+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB9D27F1D3DF5EB005CD431 /* UIColor+PDCAdd.m */; };
@@ -59,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		237E18E21D64363D004045ED /* UIView+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PDCAdd.h"; sourceTree = "<group>"; };
+		237E18E31D64363D004045ED /* UIView+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDCAdd.m"; sourceTree = "<group>"; };
+		237E18E51D6438B3004045ED /* UITableView+AutoCacheCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutoCacheCellHeight.h"; sourceTree = "<group>"; };
+		237E18E61D6438B3004045ED /* UITableView+AutoCacheCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AutoCacheCellHeight.m"; sourceTree = "<group>"; };
 		EA20511B1D003E9200A81DD6 /* PDCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2051341D003E9200A81DD6 /* PDCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2051381D003E9200A81DD6 /* PDCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCKitTests.m; sourceTree = "<group>"; };
@@ -300,6 +306,10 @@
 				EABD34E31D349B8800C96D4F /* UIViewController+Alert.m */,
 				EABD34DD1D349B8800C96D4F /* UIView+GradientColor.h */,
 				EABD34DE1D349B8800C96D4F /* UIView+GradientColor.m */,
+				237E18E21D64363D004045ED /* UIView+PDCAdd.h */,
+				237E18E31D64363D004045ED /* UIView+PDCAdd.m */,
+				237E18E51D6438B3004045ED /* UITableView+AutoCacheCellHeight.h */,
+				237E18E61D6438B3004045ED /* UITableView+AutoCacheCellHeight.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -520,6 +530,7 @@
 			files = (
 				EABD34EB1D349B8800C96D4F /* StringDemoController.m in Sources */,
 				EABD34ED1D349B8800C96D4F /* DemoListTableViewController.m in Sources */,
+				237E18E71D6438B3004045ED /* UITableView+AutoCacheCellHeight.m in Sources */,
 				EABD34E81D349B8800C96D4F /* ButtonDemoController.m in Sources */,
 				EAD4C5311D3CA6F100F3D5B2 /* UINavigationController+PDC.m in Sources */,
 				EABD34EA1D349B8800C96D4F /* NSTimerDemoController.m in Sources */,
@@ -536,6 +547,7 @@
 				EABD34F71D349B8800C96D4F /* NSTimer+PDCAdd.m in Sources */,
 				EABD34F41D349B8800C96D4F /* NSArray+PDCAdd.m in Sources */,
 				EAD4C5341D3CA71100F3D5B2 /* UIApplication+PDCKit.m in Sources */,
+				237E18E41D64363D004045ED /* UIView+PDCAdd.m in Sources */,
 				EABD34FA1D349B8800C96D4F /* UIView+GradientColor.m in Sources */,
 				EABD34F51D349B8800C96D4F /* NSAttributedString+PDCAdd.m in Sources */,
 				EABD34E41D349B8800C96D4F /* AppDelegate.m in Sources */,
