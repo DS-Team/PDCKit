@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2335FF301D7532FE00F5C994 /* PDCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2335FF2F1D7532FE00F5C994 /* PDCProxy.m */; };
 		237E18E41D64363D004045ED /* UIView+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E31D64363D004045ED /* UIView+PDCAdd.m */; };
 		237E18E71D6438B3004045ED /* UITableView+AutoCacheCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E61D6438B3004045ED /* UITableView+AutoCacheCellHeight.m */; };
 		EA2051391D003E9200A81DD6 /* PDCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051381D003E9200A81DD6 /* PDCKitTests.m */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2335FF2E1D7532FE00F5C994 /* PDCProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCProxy.h; sourceTree = "<group>"; };
+		2335FF2F1D7532FE00F5C994 /* PDCProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCProxy.m; sourceTree = "<group>"; };
 		237E18E21D64363D004045ED /* UIView+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PDCAdd.h"; sourceTree = "<group>"; };
 		237E18E31D64363D004045ED /* UIView+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDCAdd.m"; sourceTree = "<group>"; };
 		237E18E51D6438B3004045ED /* UITableView+AutoCacheCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutoCacheCellHeight.h"; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 				EABD34CB1D349B8800C96D4F /* PDCSerialQueue.m */,
 				EABD34CC1D349B8800C96D4F /* PDCWaitGroup.h */,
 				EABD34CD1D349B8800C96D4F /* PDCWaitGroup.m */,
+				2335FF2E1D7532FE00F5C994 /* PDCProxy.h */,
+				2335FF2F1D7532FE00F5C994 /* PDCProxy.m */,
 			);
 			path = MyKit;
 			sourceTree = "<group>";
@@ -539,6 +544,7 @@
 				EABD34FC1D349B8800C96D4F /* UIViewController+Alert.m in Sources */,
 				EABD34E91D349B8800C96D4F /* NSAttributedStringController.m in Sources */,
 				EABD34F31D349B8800C96D4F /* PDCWaitGroup.m in Sources */,
+				2335FF301D7532FE00F5C994 /* PDCProxy.m in Sources */,
 				EAB9D2CF1D3E08DA005CD431 /* UIBarButtonItem+PDCAdd.m in Sources */,
 				EABD34EF1D349B8800C96D4F /* KeyControllerModel.m in Sources */,
 				EABD34F81D349B8800C96D4F /* UIButton+PDCAdd.m in Sources */,
