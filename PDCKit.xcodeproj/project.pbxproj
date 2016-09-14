@@ -10,6 +10,7 @@
 		2335FF301D7532FE00F5C994 /* PDCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2335FF2F1D7532FE00F5C994 /* PDCProxy.m */; };
 		2335FF381D75795E00F5C994 /* PDCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2335FF351D75795E00F5C994 /* PDCCache.m */; };
 		2335FF391D75795E00F5C994 /* PDCDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2335FF371D75795E00F5C994 /* PDCDiskCache.m */; };
+		234E95FF1D89335700E1B934 /* NSObject+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 234E95FE1D89335700E1B934 /* NSObject+Alert.m */; };
 		237E18E41D64363D004045ED /* UIView+PDCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E31D64363D004045ED /* UIView+PDCAdd.m */; };
 		237E18E71D6438B3004045ED /* UITableView+AutoCacheCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E18E61D6438B3004045ED /* UITableView+AutoCacheCellHeight.m */; };
 		EA2051391D003E9200A81DD6 /* PDCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2051381D003E9200A81DD6 /* PDCKitTests.m */; };
@@ -70,6 +71,8 @@
 		2335FF351D75795E00F5C994 /* PDCCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCCache.m; sourceTree = "<group>"; };
 		2335FF361D75795E00F5C994 /* PDCDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCDiskCache.h; sourceTree = "<group>"; };
 		2335FF371D75795E00F5C994 /* PDCDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCDiskCache.m; sourceTree = "<group>"; };
+		234E95FD1D89335700E1B934 /* NSObject+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Alert.h"; sourceTree = "<group>"; };
+		234E95FE1D89335700E1B934 /* NSObject+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Alert.m"; sourceTree = "<group>"; };
 		237E18E21D64363D004045ED /* UIView+PDCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PDCAdd.h"; sourceTree = "<group>"; };
 		237E18E31D64363D004045ED /* UIView+PDCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDCAdd.m"; sourceTree = "<group>"; };
 		237E18E51D6438B3004045ED /* UITableView+AutoCacheCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutoCacheCellHeight.h"; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				EABD34D41D349B8800C96D4F /* NSString+PDCAdd.m */,
 				EABD34D51D349B8800C96D4F /* NSTimer+PDCAdd.h */,
 				EABD34D61D349B8800C96D4F /* NSTimer+PDCAdd.m */,
+				234E95FD1D89335700E1B934 /* NSObject+Alert.h */,
+				234E95FE1D89335700E1B934 /* NSObject+Alert.m */,
 			);
 			path = NSKit;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				EABD34E81D349B8800C96D4F /* ButtonDemoController.m in Sources */,
 				EAD4C5311D3CA6F100F3D5B2 /* UINavigationController+PDC.m in Sources */,
 				EABD34EA1D349B8800C96D4F /* NSTimerDemoController.m in Sources */,
+				234E95FF1D89335700E1B934 /* NSObject+Alert.m in Sources */,
 				2335FF381D75795E00F5C994 /* PDCCache.m in Sources */,
 				EABD34F21D349B8800C96D4F /* PDCSerialQueue.m in Sources */,
 				EABD34F91D349B8800C96D4F /* UIControl+PDCAdd.m in Sources */,
